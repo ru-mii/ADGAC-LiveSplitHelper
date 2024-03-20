@@ -1,6 +1,6 @@
 # LiveSplitHelper
 YOU NORMALLY DON'T NEED THIS FOR THE AUTOSPLITTER TO WORK UNLESS YOU'RE USING CUSTOM MODS LIKE THE CUSTOMIZATION MOD OR MODEL REPLACEMENT MOD OR ANY OTHER MOD OR IF YOU'RE HAVING ISSUES WITH THE AUTOSPLITTER AS IT IS
 
-This mod is created to work with BepInEx, you would unzip the .zip file from [I'm an inline-style link with title](https://www.google.com "Google's Homepage") and then copy paste into your plugins folder in BepInEx, should like like this...
+This mod is created to work with BepInEx, you would unzip the .zip file from [Release]([https://www.google.com](https://github.com/ru-mii/ADGAC-LiveSplitHelper/releases) "Releases") and then copy paste into your plugins folder in BepInEx, should like like this...
   
 ![image](https://github.com/ru-mii/ADGAC-LiveSplitHelper/assets/118167137/900091ae-9e17-4e0f-bb3e-5391bc0d1599)
