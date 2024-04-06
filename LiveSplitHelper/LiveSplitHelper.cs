@@ -7,6 +7,7 @@ using System.Reflection;
 using HarmonyLib;
 using BepInEx;
 using System.IO;
+using UnityEngine;
 
 namespace LiveSplitHelper
 {
@@ -15,7 +16,7 @@ namespace LiveSplitHelper
     {
         public const string pluginGuid = "2fd308b761844bd6bcc61cfa3ae1a70c";
         public const string pluginName = "LiveSplitHelper";
-        public const string pluginVersion = "1.0";
+        public const string pluginVersion = "2.0";
 
         public static BepInEx.Logging.ManualLogSource pLogger;
         Harmony harmony = new Harmony(pluginGuid);
@@ -82,8 +83,9 @@ namespace LiveSplitHelper
         {
             public static bool Prefix(ClimberMain __instance)
             {
-                position[0] = __instance.body.transform.position.x;
-                position[1] = __instance.body.transform.position.y;
+                Transform childTransform = __instance.transform.Find("Climber_Hero_Body_Prefab");
+                position[0] = childTransform.position.x;
+                position[1] = childTransform.position.y;
                 return true;
             }
         }
